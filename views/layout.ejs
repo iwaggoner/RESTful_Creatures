@@ -5,9 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dino Time</title>
+    <base href='/'>
 </head>
+
+<style>
+    img {
+        width: 700px;
+        height: 600px;
+    }
+</style>
+
+
 <body>
     <h1>Dinosaur Time</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href='/'>Home Page</a>
+            </li>
+        </ul>
+        <ul>
+            
+            <li>
+                <a href='./dinosaurs/'>Dino Home</a>
+            </li>
+            <li>
+                <a href='./dinosaurs/new/'>New Dino</a>
+            </li>
+            <li>
+                <a href='./dinosaurs/'>Show Dino</a>
+            </li>
+            <li>
+                <a href='./dinosaurs/edit/'>Edit Dino</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href='./prehistoric_creatures/'>Creatures Home</a>
+            </li>
+            <li>
+                <a href='./prehistoric_creatures/new/'>New Creature</a>
+            </li>
+            <li>
+                <a href='./dinosaurs/'>Show Creature</a>
+            </li>
+            <li>
+                <a href='./dinosaurs/edit/'>Edit Creature</a>
+            </li>
+        </ul>
+    </nav>
 
         <%- body %>
 </body>

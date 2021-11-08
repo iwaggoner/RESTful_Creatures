@@ -1,4 +1,4 @@
-const express = require('express')
+ const express = require('express')
 const router = express.Router()
 const fs = require('fs')
 
@@ -53,7 +53,7 @@ router.get('/:idx', (req,res)=>{
     let prehistoricCreatures = fs.readFileSync('./prehistoric_creatures.json')
     let prehistoricData = JSON.parse(prehistoricCreatures)
     let creatureId = req.params.idx
-    res.render('prehistoric_creatures/edit.ejs', {myCreature:prehistoricData[creatureId]})
+    res.render('prehistoric_creatures/showCre.ejs', {myCreature:prehistoricData[creatureId]})
 })
 
 

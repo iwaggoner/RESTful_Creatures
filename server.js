@@ -16,7 +16,7 @@ app.use('/dinosaurs', require('./controllers/dinosaurs.js'))
 app.use('/prehistoric_creatures', require('./controllers/prehistoricCreatures.js'))
 
 app.get('/', (req,res)=>{
-    res.render('home.ejs')
+    res.render('home')
 })
 
 
